@@ -24,11 +24,11 @@ namespace h11.Pages.Products
         }
         public IActionResult OnPost(int id, string newName, int newPrice, string newDescription, int newBarcode, string newPhoto)
         {
-            Product1.Name = newName;
-            Product1.Price = newPrice;
-            Product1.Description = newDescription;
-            Product1.Barcode = newBarcode;
-            Product1.Photo = newPhoto;
+            Product.Name = newName;
+            Product.Price = newPrice;
+            Product.Description = newDescription;
+            Product.Barcode = newBarcode;
+            Product.Photo = newPhoto;
 
             _productrepository.Updata(id, Product);
 
