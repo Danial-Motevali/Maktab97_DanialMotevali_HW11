@@ -1,0 +1,22 @@
+﻿@page
+@model h11.Pages.Products.DeleteModel
+@{
+}
+
+<h1>Delete</h1>
+
+<div class="card-group">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card" style="width: 18rem;">
+            <img src="@product.Photo" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@product.Name</h5>
+                <p class="card-text">@product.Description</p>
+                <a class="btn btn-primary" asp-page="Detail" asp-route-id="@product.Id">Detail</a>
+                <a class="btn btn-primary" asp-page="Edit" asp-route-id="@product.Id">Edit</a>
+                <a class="btn btn-primary" asp-page="Delete" asp-route-id="@product.Id">Delete</a>
+            </div>
+        </div>
+    }
+</div>

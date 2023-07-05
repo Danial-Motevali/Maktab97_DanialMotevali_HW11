@@ -1,0 +1,13 @@
+﻿@page
+@model h11.Pages.Products.EditModel
+@{
+}
+
+<form method="post">
+    <input type="text" asp-for="@Model.Product.Name" name="newName" placeholder="Name" style="margin-bottom: 2px;" />
+    <input type="text" asp-for="@Model.Product.Price" name="newPrice" placeholder="Price" style="margin-bottom: 2px;" />
+    <input type="text" asp-for="@Model.Product.Description" name="newDescription" placeholder="Description" style="margin-bottom: 2px;" />
+    <input type="text" asp-for="@Model.Product.Barcode" name="newBarcode" placeholder="Barcode" style="margin-bottom: 2px;" />
+    <input type="text" asp-for="@Model.Product.Photo" name="newPhoto" placeholder="Photo" style="margin-bottom: 2px;" />
+    <button type="submit">submit</button>
+</form>

@@ -1,0 +1,16 @@
+﻿@page
+@model h11.Pages.Products.DetailModel
+@{
+}
+
+<h1>Detail @Model.Id</h1>
+
+<div class="card mb-3">
+    <img src="@Model.Detail.Photo" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Detail.Name</h5>
+        <p class="card-text">@Model.Detail.Description</p>
+        <p class="card-text">@Model.Detail.Barcode</p>
+        <p class="card-text"><small class="text-body-secondary">@Model.Detail.Price</small></p>
+    </div>
+</div>
